@@ -56,25 +56,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ChartCard(),
                 Expanded(
-                    child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      CardItem('h', '12:00 pm', 2),
-                      CardItem('h2', '12:00 pm', 2),
-                      CardItem('h3', '12:00 pm', 2),
-                      CardItem('h4', '12:00 pm', 2),
-                      CardItem('h5', '12:00 pm', 2),
-                      CardItem('h6', '12:00 pm', 2),
-                    ],
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        CardItem('h', '12:00 pm', 2),
+                        CardItem('h2', '12:00 pm', 2),
+                        CardItem('h3', '12:00 pm', 2),
+                        CardItem('h4', '12:00 pm', 2),
+                        CardItem('h5', '12:00 pm', 2),
+                        CardItem('h6', '12:00 pm', 2),
+                      ],
+                    ),
                   ),
-                )),
+                ),
               ],
             ),
-            RaisedButton(
-              onPressed: () => {},
-            )
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {},
+        child: Icon(Icons.add),
+        backgroundColor: Colors.teal,
       ),
     );
   }
